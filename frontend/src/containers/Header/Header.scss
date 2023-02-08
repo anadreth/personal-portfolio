@@ -1,0 +1,113 @@
+.app__header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-color);
+    background-image: url(./../../assets/Sitting/4k.png), linear-gradient(var(--dark-color), var(--purple-color));
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+
+    .app__header-title {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-60%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0 1rem;
+
+        h1 {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 100px;
+            color: var(--purple-color);
+            z-index: 2;
+            padding: 0 1rem;
+            span {
+                color: white;
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 75px;
+            }
+            @media screen and (max-width: 340px) {
+                font-size: 50px;
+            }
+            @media screen and (max-width: 250px) {
+                font-size: 40px;
+            }
+        }
+
+        .p__small {
+            font-size: 16px;
+            color: white;
+        }
+
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            color: var(--purple-color);
+            z-index: 2;
+            padding: 0 1.3rem;
+        }
+    }
+
+    @media screen and (max-width: 1240px){
+        background-image: url(./../../assets/Sitting/1240.png),  linear-gradient(var(--dark-color), var(--purple-color));
+    }
+    @media screen and (max-width: 730px){
+        background-image: url(./../../assets/Sitting/730.png),  linear-gradient(var(--dark-color), var(--purple-color));
+    }
+    @media screen and (max-width: 540px){
+        background-image: url(./../../assets/Sitting/730.png),  linear-gradient(var(--dark-color), var(--purple-color));
+    }
+    @media screen and (max-width: 500px){
+        background-size: contain;
+    }
+}
+
+.glowing-circle {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    z-index: 0;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: #fff;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+
+    @media screen and (min-width: 1000px) {
+        display:none;
+    }
+  }
+  @keyframes glowing {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #DBDAE6, 0 0 30px #B8B6CD, 0 0 40px #9593B4, 0 0 50px #73729C, 0 0 60px #B8B6CD, 0 0 70px #DBDAE6;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #73729C, 0 0 40px #73729C, 0 0 50px #73729C, 0 0 60px #73729C, 0 0 70px #73729C, 0 0 80px #73729C;
+    }
+  }
+
+  .glowing-circle-big {
+    position: absolute;
+    opacity: 1;
+    top: 55%;
+    left: 30%;
+    transform: translateX(-70%);
+    bottom: 0;
+    z-index: 0;
+    width: 1px;
+    height: 1px;
+    border-radius:50%;
+    background-color: #fff;
+    box-shadow: 0 0 200px 150px #fff, 0 0 100px 60px #363636, 0 0 140px 90px #fff;
+  }

@@ -1,0 +1,53 @@
+.app__about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding-top: 8rem;
+
+    .title {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            padding: 0;
+            margin: 0;
+            box-shadow: none;
+
+            svg {
+                margin: 1rem;
+                filter: invert(47%) sepia(16%) saturate(769%) hue-rotate(203deg) brightness(94%) contrast(90%);
+            }
+        }
+    }
+
+    div {
+        margin: 0 1rem;
+        max-width: 800px;
+        padding: 2rem;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+        border-radius: 10px;
+
+        h2 {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            color: var(--purple-color);
+            padding: 0 1rem;
+        }
+
+        p {
+            font-family: "Poppins";
+            font-size: 25px;
+            color: var(--purple-color);
+            padding: 0 1rem;
+            text-align: left;
+        }
+    }
+    
+}

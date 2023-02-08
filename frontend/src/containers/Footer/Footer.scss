@@ -1,0 +1,34 @@
+.app__footer-mail {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    bottom: 150px;
+    left: -50px;
+    transform: rotate(-90deg);
+    text-align: center;
+    font-size: 16px;
+
+    a {
+        text-decoration: none;
+        transition: all;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+    }
+
+  
+
+    @media screen and (max-width: 1300px) {
+        display: none;
+    }
+}
+
+
+.icons{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    filter: invert(47%) sepia(16%) saturate(769%) hue-rotate(203deg) brightness(94%) contrast(90%);
+
+    svg {
+        margin: 1rem;
+    }
+}

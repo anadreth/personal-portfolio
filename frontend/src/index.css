@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Poppins&display=swap');
+
+:root {
+  --font-base: "Amatic SC", "Aboreto", "Poppins", sans-serif;
+
+  --light-color: #F6EFE9;
+  --green-color: #AABC86;
+  --purple-color: #73729C;
+  --blue-color: #7673F4;
+  --red-color: #B37A79;
+  --dark-color: #363636;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

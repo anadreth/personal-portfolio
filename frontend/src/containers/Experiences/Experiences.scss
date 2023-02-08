@@ -1,0 +1,136 @@
+.app__experiences {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    
+    
+    padding: 0 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-image: linear-gradient(var(--purple-color), white);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: var(--purple-color);
+    color: var(--purple-color);
+
+    .exp__container {
+        position: absolute;
+        left: 60%;
+        transform: translateX(-30%);
+        @media screen and (max-width: 450px) {
+            left: 60%;
+            transform: translateX(-40%);
+            
+
+        }
+    }
+
+    .img__absolute {
+        position: absolute;
+        height: 80%;
+        top: 50%;
+        left: 30%;
+        transform: translateY(-50%);
+        padding: 1rem;
+
+        @media screen and (max-width: 1160px) {
+            left: 20%;
+            
+        }
+        @media screen and (max-width: 720px) {
+            left: 10%;
+            
+        }
+
+        @media screen and (max-width: 565px) {
+            left: 0;
+            height: auto;
+            width: 40%;
+            
+        }
+
+    }
+
+    h2 {
+        align-self: center;
+        padding: 1rem;
+        color: white;
+       
+    }
+
+    .app__experiences-table {
+        height: auto;
+        width: full;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 1rem;
+        row-gap: 1rem;
+       
+
+        div {
+            padding: 0;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            text-align: start;
+        }
+
+        ul {
+            list-style: none;
+            
+        }
+
+        ul li:before {
+            content: '\2014';
+            position: absolute;
+            margin-left: -20px;
+          }
+
+        .work__header {
+            font-size: 25px;
+        }
+    }
+
+    .app__experiences-school {
+        height: auto;
+        width: full;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        row-gap: 1rem;
+
+        div {
+            padding: 0;
+            display: flex;
+        }
+
+        ul {
+            list-style: none;
+            
+        }
+
+        ul li:before {
+            content: '\2014';
+            position: absolute;
+            margin-left: -20px;
+          }
+
+        .work__header {
+            font-size: 25px;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--light-color);
+        cursor: pointer;
+    }
+
+}

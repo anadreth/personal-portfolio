@@ -1,0 +1,116 @@
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+:-ms-input-placeholder { 
+    color: white;
+}
+  
+::-ms-input-placeholder { 
+    color: white;
+}
+
+.app__contact {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    .form {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        max-width: 800px;
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient( var(--dark-color), var(--purple-color));
+        color: white;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            row-gap: 0.5rem;
+            width: 100%;
+        }
+        
+        input, textarea {
+            font-family: inherit;
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid var(--dark-color);
+            outline: 0;
+            font-size: 16px;
+            color: white;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+          
+            &::placeholder {
+              color: transparent;
+            }
+            &:placeholder-shown ~ .form__label {
+                font-size: 1.3rem;
+                cursor: text;
+                top: 20px;
+              }
+        }
+
+        .input__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: var(--dark-color);
+          }
+
+          .input:focus {
+            ~ .input__label {
+              position: absolute;
+              top: 0;
+              display: block;
+              transition: 0.2s;
+              font-size: 1rem;
+              color: white;
+              font-weight:700;    
+            }
+            padding-bottom: 6px;  
+            font-weight: 700;
+            border-width: 3px;
+            border-image: linear-gradient(to right, white,var(--dark-color));
+            border-image-slice: 1;
+          }
+
+          textarea {
+            resize: none;
+            height: 30vh;
+          }
+    }
+}
+
+button {
+    padding: 0.5rem 6rem 0.5rem 6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--purple-color);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    align-self: center;
+    transition: 0.3s;
+
+    &:hover {
+      color: white;
+      background-color: var(--purple-color);
+    }
+    &:active {
+      background-color: var(--dark-color);
+    }
+}

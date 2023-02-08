@@ -1,0 +1,43 @@
+.app__skills {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 10rem 2rem 1rem 2rem;
+
+    background-image: url(./../../assets/Waves/white-dark-waves.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    div {
+        position:absolute;
+        top: 0;
+        max-width: 1350px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        img {
+            width: 110px;
+            @media screen and (max-width: 300px) {
+                width: 90px;
+                
+            }
+        }
+
+        @media screen and (max-width: 1500px) {
+            max-width: 700px;
+            
+        }
+        @media screen and (max-width: 750px) {
+            max-width: 500px;
+            
+        }
+       
+        
+    }
+}

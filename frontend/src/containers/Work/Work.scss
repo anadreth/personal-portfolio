@@ -1,0 +1,124 @@
+.app__work {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+
+    background-image: url(./../../assets/Waves/black-waves.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .app__work-creatoroll {
+        max-width: 800px;
+        height: auto;
+        padding: 2rem;
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        background-color: var(--dark-color);
+        row-gap: 1rem;
+
+        img{
+            width: 100%;
+            max-width: 500px;
+            align-self: center;
+            margin: 0;
+
+        }
+
+        h2 {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            color: white;
+        }
+
+        p {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            color: var(--light-color);
+            text-align: left;
+        }
+
+        ul {
+            width: 100%;
+            max-width: 500px;
+            color: var(--dark-color);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2);
+
+
+        }
+        a:hover {
+            color: var(--light-color);
+            background-color: var(--red-color);
+            transition-duration: 150ms;
+            transition-timing-function: ease-in-out;
+        }
+        .link {
+            border-radius: 5px 5px 5px 10px;
+        }
+        .code {
+            border-radius: 5px 5px 10px 5px;
+        }
+        
+    }
+    
+
+    
+
+}
+
+.work__sidebyside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    .work__mobile {
+        width: 400px;
+        filter: drop-shadow(3px 3px 3px rgba(255, 255, 255, 0.2));
+    }
+}
+
+.work__images {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.work__brand {
+    width: 100%;
+    border-radius: 10px 10px 5px 5px;
+    margin: 1rem;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2);
+}
+
+
