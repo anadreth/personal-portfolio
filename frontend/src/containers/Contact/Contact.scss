@@ -18,6 +18,11 @@
     display: grid;
     place-items: center;
 
+    background-image: url(./../../assets/Waves/purple-waves.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
     .form {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         width: 100%;
