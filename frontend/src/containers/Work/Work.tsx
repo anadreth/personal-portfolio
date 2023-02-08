@@ -7,7 +7,7 @@ const Work = () => {
   return (
     <div className='app__work' id="work">
       <div className='app__work-creatoroll' > 
-        <h2 className='purple' >My projects...</h2>
+        <h2 className='purple' >My projects</h2>
         <br/>
         <img className='work__brand' src={images.brand} alt="creatoroll" />
         <ul>
