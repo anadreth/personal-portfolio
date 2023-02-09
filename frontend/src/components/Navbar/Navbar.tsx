@@ -39,6 +39,7 @@ const Navbar = () => {
                 </motion.li>
             ))}
                 <motion.li>
+                    <div id={"cv"}  className={`dot ${color}dot`}></div>
                     <a href={images.cv} className={color} target="_blank" >resume</a> 
                 </motion.li>
         </motion.ul>

@@ -45,7 +45,7 @@ const Header = () => {
           <h1>
           {
             miroslav.split("").map((letter, index) => (
-              <motion.span
+              <motion.span key={letter}
                 animate={{y: [200, 0], opacity: [0, 1]}}
                 transition={{duration: 1, delay: index/10}}
               >{letter}</motion.span>
@@ -53,7 +53,7 @@ const Header = () => {
           }
           {
             vano.split("").map((letter, index) => (
-              <motion.span
+              <motion.span key={letter}
                 className='vano'
                 animate={{y: [200, 0], opacity: [0, 1]}}
                 transition={{duration: 1, delay: index/10}}

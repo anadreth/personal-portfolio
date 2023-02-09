@@ -20,7 +20,7 @@ const Skills = () => {
       >
         {
           [images.html, images.css, images.javascript, images.redux, images.typescript, images.react, images.sass, images.node, images.figma, images.git, images.ps, images.mdb].map((item, index)=> (
-            <motion.img src={item} alt={item} whileInView={{ opacity: [0, 1], scale: [0, 1]}} transition={{duration: 0.5, delay: index/20 }} />
+            <motion.img key={item} src={item} alt={item} whileInView={{ opacity: [0, 1], scale: [0, 1]}} transition={{duration: 0.5, delay: index/20 }} />
           ))
         }
       </motion.div>

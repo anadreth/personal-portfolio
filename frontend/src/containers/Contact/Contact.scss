@@ -37,14 +37,15 @@
         align-items: center;
         flex-direction: column;
         background-image: linear-gradient( var(--dark-color), var(--purple-color));
-        color: white;
+        color: var(--light-color);
 
         h2 {
           align-self: center;
+          text-align: center;
         }
 
         p {
-          padding: 1rem 0 1rem 0;
+          padding: 0.5rem 0 0.5rem 0;
           text-align: center;
           width: 100%;
         }
@@ -59,16 +60,19 @@
         }
         
         input, textarea {
+            margin-bottom: 1rem;
             font-family: inherit;
             width: 100%;
             border: 0;
-            border-bottom: 2px solid var(--purple-color);
             outline: 0;
             font-size: 16px;
             color: var(--light-color);
             padding: 7px 0;
-            background: transparent;
+            background-image: linear-gradient(var(--purple-color), var(--dark-color));
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+            border-radius: 10px;
             transition: border-color 0.2s;
+            padding: 0.5rem 1rem 0.5rem 1rem;
           
             &::placeholder {
               color: transparent;
@@ -78,11 +82,6 @@
                 cursor: text;
                 top: 20px;
               }
-        }
-
-        textarea {
-          border-bottom: 2px solid rgba(207, 178, 247, 0.4);
-          
         }
 
         .input__label {
@@ -119,6 +118,7 @@
 }
 
 button {
+  margin: 0.5rem 0 0 0;
     padding: 0.5rem 2rem 0.5rem 2rem;
     background-color: var(--light-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
