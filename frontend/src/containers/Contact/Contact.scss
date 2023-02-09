@@ -39,6 +39,10 @@
         background-image: linear-gradient( var(--dark-color), var(--purple-color));
         color: white;
 
+        h2 {
+          align-self: center;
+        }
+
         div {
             display: flex;
             justify-content: center;
@@ -46,6 +50,7 @@
             flex-direction: column;
             row-gap: 0.5rem;
             width: 100%;
+            
         }
         
         input, textarea {

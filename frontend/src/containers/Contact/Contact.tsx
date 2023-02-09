@@ -130,7 +130,7 @@ const Contact = () => {
                 type="submit"
                 disabled={isSubmitting}
               >
-                SUBMIT
+                SEND EMAIL
               </motion.button>
             </div>
           </form>

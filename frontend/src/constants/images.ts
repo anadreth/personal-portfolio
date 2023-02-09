@@ -25,6 +25,7 @@ import tablet from './../assets/tablet.png'
 import laptop from './../assets/laptop.png'
 import linked from './../assets/logos/linked.svg'
 import github from './../assets/logos/github.svg'
+import cv from  './../assets/miroslav_vano_cv.pdf'
 
 export default {
     bigBlob,
@@ -53,5 +54,6 @@ export default {
     tablet,
     laptop,
     github,
-    linked
+    linked,
+    cv,
 }
