@@ -1,8 +1,21 @@
 import React from 'react'
 import './Header.scss'
-import { images } from '../../constants'
 import { useScroll, motion, useTransform } from 'framer-motion'
 
+
+const bounceTransition = {
+  y: {
+    duration: Infinity,
+    yoyo: Infinity,
+    ease: "easeOut",
+  },
+  backgroundColor: {
+    duration: 0,
+    yoyo: Infinity,
+    ease: "easeOut",
+    repeatDelay: 0.8,
+  },
+}
 
 const Header = () => {
   const miroslav = "Miroslav";
@@ -11,16 +24,17 @@ const Header = () => {
   if (screen.width < 1000) {
     amount = 400;
   } else {
-    amount = 800;
+    amount = 1000;
   }
   let {scrollYProgress} = useScroll();
+  let opacity = useTransform(scrollYProgress, [0, 0.15], ["1", "0"])
   let y = useTransform(scrollYProgress, [0, 1], ["0%", amount + "%"])
 
   return (
     <div className='app__header' id="home"> 
       <div className="glowing-circle"></div>
       <motion.div className='app__header-title'
-        style={{y}}
+        style={{y, opacity}}
       >
         <div className="glowing-circle-big"></div>
         <motion.p className='p__small light'
@@ -66,6 +80,16 @@ const Header = () => {
         </p>
       </motion.div>
       
+      <motion.svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="scroll"
+        style={{ opacity}}
+        transition={{ ease: "linear", duration: 1.5, repeat: Infinity, repeatDelay: 3, delay: 2}}
+        animate={{
+          y: [0, -10, 0, -10, 0, -10, 0],
+        }}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+      </motion.svg>
+
     </div>
   )
 }

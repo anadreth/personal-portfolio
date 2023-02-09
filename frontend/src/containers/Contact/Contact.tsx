@@ -83,6 +83,7 @@ const Contact = () => {
             <div >
               <div >
                 <h2>Reach out to me!</h2>
+                <p>Do you have feedback,<br/> want to work together<br /> or just say hi?</p>
                 <label className=".input__label" htmlFor="email">Email</label>
                 <motion.input
                   id="email"
