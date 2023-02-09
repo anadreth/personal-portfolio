@@ -19,9 +19,6 @@ const Footer = () => {
 
   return (
     <div>
-      <div className='app__footer-mail'>
-        <a href="#contact" className={color}>- - - - - - - - - - - - - miroslav13vano@gmail.com</a>
-      </div>
       <div className="icons">
             <a href="https://www.linkedin.com/in/miroslav-vano/" target="_blank" rel="noopener">
               <svg

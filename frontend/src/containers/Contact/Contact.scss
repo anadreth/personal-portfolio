@@ -11,8 +11,10 @@
 }
 
 .app__contact {
+     padding: 2rem;
     height: 100vh;
     width: 100%;
+    color: var(--light-color);
     background-color: white;
     position: relative;
     display: grid;
@@ -50,10 +52,10 @@
             font-family: inherit;
             width: 100%;
             border: 0;
-            border-bottom: 2px solid var(--dark-color);
+            border-bottom: 2px solid var(--purple-color);
             outline: 0;
             font-size: 16px;
-            color: white;
+            color: var(--light-color);
             padding: 7px 0;
             background: transparent;
             transition: border-color 0.2s;
@@ -66,6 +68,11 @@
                 cursor: text;
                 top: 20px;
               }
+        }
+
+        textarea {
+          border-bottom: 2px solid rgba(207, 178, 247, 0.4);
+          
         }
 
         .input__label {
@@ -96,13 +103,14 @@
 
           textarea {
             resize: none;
-            height: 30vh;
+            height: 20vh;
           }
     }
 }
 
 button {
-    padding: 0.5rem 6rem 0.5rem 6rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: var(--light-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--purple-color);
     border-radius: 10px;
@@ -117,5 +125,10 @@ button {
     }
     &:active {
       background-color: var(--dark-color);
+    }
+
+    @media screen and (min-width: 450px) {
+      padding-left: 6rem;
+      padding-right: 6rem;
     }
 }

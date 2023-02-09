@@ -23,12 +23,13 @@
         padding: 0 1rem;
 
         h1 {
+            
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 100px;
             color: var(--purple-color);
             z-index: 2;
             padding: 0 1rem;
-            span {
+            .vano {
                 color: white;
             }
 
@@ -84,7 +85,7 @@
     -moz-animation: glowing 1s ease-in-out infinite alternate;
     animation: glowing 1s ease-in-out infinite alternate;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1180px) {
         display:none;
     }
   }
@@ -110,4 +111,10 @@
     border-radius:50%;
     background-color: #fff;
     box-shadow: 0 0 200px 150px #fff, 0 0 100px 60px #363636, 0 0 140px 90px #fff;
+  }
+
+
+  .mask{
+    overflow: hidden;
+    z-index: 100;
   }

@@ -82,7 +82,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit} className="form">
             <div >
               <div >
-                <h1>Reach out to me!</h1>
+                <h2>Reach out to me!</h2>
                 <label className=".input__label" htmlFor="email">Email</label>
                 <motion.input
                   id="email"
@@ -92,7 +92,7 @@ const Contact = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.email}
-                  animate={{ x: [-300, 0], opacity: [0, 1] }}
+                  whileInView={{ x: [-300, 0], opacity: [0, 1] }}
                 />
                 <label className=".input__label" htmlFor="subject">Subject</label>
                 <motion.input
@@ -103,7 +103,7 @@ const Contact = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.subject}
-                  animate={{ x: [-300, 0], opacity: [0, 1] }}
+                  whileInView={{ x: [-300, 0], opacity: [0, 1] }}
                   transition={{ delay: 0.2 }}
                 />
                 <label className=".input__label" htmlFor="message">Your Message</label>
@@ -114,7 +114,7 @@ const Contact = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.message}
-                  animate={{ x: [-300, 0], opacity: [0, 1] }}
+                  whileInView={{ x: [-300, 0], opacity: [0, 1] }}
                   transition={{ delay: 0.4 }}
                 />
               </div>
@@ -125,8 +125,8 @@ const Contact = () => {
                 <motion.div>{errors.message}</motion.div>
               )}
               <motion.button
-                animate={{ x: [-300, 0], opacity: [0, 1] }}
-                transition={{ delay: 0.6 }}
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ delay: 0.8 }}
                 type="submit"
                 disabled={isSubmitting}
               >

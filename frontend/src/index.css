@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Abril+Fatface&family=Amatic+SC&family=Cinzel+Decorative&family=Poppins&display=swap');
 
 :root {
-  --font-base: "Amatic SC", "Aboreto", "Poppins", sans-serif;
+  --font-base: "Amatic SC", "Aboreto", "Poppins", "Abril Fatface", "Cinzel Decorative", sans-serif;
 
   --light-color: #F6EFE9;
   --green-color: #AABC86;

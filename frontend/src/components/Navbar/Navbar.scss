@@ -5,7 +5,6 @@
 
     width: 100%;
     height: 80px;
-    padding: 1rem;
 
     backdrop-filter: blur(10px);
     z-index: 10;
@@ -25,18 +24,53 @@
         transition: all;
         transition-duration: 300ms;
         transition-timing-function: ease-in-out;
+
+       
     }
-    @media screen and (max-width: 1000px) {
+    
+    .dot {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all;
+        transition-duration: 150ms;
+        transition-timing-function: ease-in-out;
+    }
+
+    li {
+        padding: 1rem 1rem 1rem 1rem;
+        width: 100%;
+        column-gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+
+        &:hover {
+
+            .dot {
+              opacity: 1;
+            }
+          }
+    }
+   
+
+
+
+    @media screen and (max-width: 1180px) {
         display: none;
     }
 }
 
 .app__navbar-menu {
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: end;
     align-items: center;
+    padding-right: 1rem;
     z-index: 20;
    
     div {
@@ -81,15 +115,15 @@
         }
     }
     svg {
-        width: auto;
-        height: 100%;
+        width: 50px;
+        height: 50px;
         color: var(--purple-color);
         background-color: white;
         padding: 0.5rem;
         border-radius: 50%;
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1180px) {
         display: none;
     }
 }
@@ -100,4 +134,18 @@
 
 .purple{
     color: var(--purple-color)
+}
+
+.purpledot{
+    background-color: var(--purple-color)
+}
+.lightdot{
+    background-color: var(--light-color);
+}
+.reddot{
+    background-color: var(--red-color);
+}
+
+.visible {
+    opacity: 0;
 }
