@@ -8,7 +8,7 @@ const Experiences = () => {
     <div className='app__experiences' id="background">
         <motion.img src={images.boyStanding} alt="" className='img__absolute'
             whileInView={{opacity: [0, 1]}}
-            transition={{delay: 0.2, duration: 0.5}}
+            transition={{delay: 0.5, duration: 1}}
         />
         <section className='exp__container'>
             <div className='h__div'>

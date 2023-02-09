@@ -79,7 +79,11 @@ const Header = () => {
           >and Doctor</motion.span>
         </p>
       </motion.div>
-      
+
+      <motion.div
+        animate={{opacity: [0 ,1]}}
+        transition={{duration: 0.5, delay: 2}}
+      >
       <motion.svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="scroll"
         style={{ opacity}}
         transition={{ ease: "linear", duration: 1.5, repeat: Infinity, repeatDelay: 3, delay: 2}}
@@ -89,6 +93,7 @@ const Header = () => {
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
       </motion.svg>
+       </motion.div>
 
     </div>
   )
