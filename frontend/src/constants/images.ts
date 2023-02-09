@@ -26,14 +26,9 @@ import laptop from './../assets/laptop.png'
 import linked from './../assets/logos/linked.svg'
 import github from './../assets/logos/github.svg'
 import cv from  './../assets/miroslav_vano_cv.pdf'
+import tailwind from './../assets/tailwind.png'
 
 export default {
-    bigBlob,
-    boySitting,
-    boyStanding,
-    purpleBlob,
-    smallBlob,
-    combo,
     git,
     figma,
     redux,
@@ -44,16 +39,13 @@ export default {
     sass,
     css,
     html,
-    race,
-    home,
-    dashboard,
     brand,
     logo,
     mdb,
     ps,
     tablet,
-    laptop,
     github,
     linked,
     cv,
+    tailwind,
 }
