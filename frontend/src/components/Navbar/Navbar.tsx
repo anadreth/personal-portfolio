@@ -3,12 +3,15 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion'
 import './Navbar.scss'
 import { images } from '../../constants';
+import ProgressBar from '../ProgressBar/ProgressBar';
+
 
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     const [scrollTop, setScrollTop] = useState(0);
     const [color, setColor] = useState("purple");
+    const [highlight, setHighlight] = useState(false);
 
     
     window.onscroll = function () {
@@ -45,6 +48,7 @@ const Navbar = () => {
 
   return (
     <nav className='app__navbar'>
+        
         <motion.ul className={`app__navbar-list`}
             animate={{y: [-100, 0], opacity: [0, 1]}}
             transition={{duration: 1, delay: 1, ease: "easeInOut"}}
@@ -55,7 +59,7 @@ const Navbar = () => {
                     <a href={`#${item}`} className={color}>{item}</a>
                 </motion.li>
             ))}
-                <motion.li>
+                <motion.li >
                     <div id={"cv"}  className={`dot ${color}dot`}></div>
                     <a href={images.cv} className={color} target="_blank" >resume</a> 
                 </motion.li>
@@ -88,6 +92,31 @@ const Navbar = () => {
                 )}
             </AnimatePresence>
         </div>
+        <ProgressBar color={color} setHighlight={setHighlight} />
+
+        <a href={images.cv}>
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className={`${highlight ? "highlight" : "nohighlight"} click`}
+            transition={{
+              ease: "linear",
+              duration: 1.5,
+              repeat: Infinity,
+              repeatDelay: 3,
+              delay: 2,
+            }}
+            animate={{
+              y: [0, 10, 0, 10, 0, 10, 0],
+            }}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+          </motion.svg>
+
+        </a>
     </nav>
   )
 }
