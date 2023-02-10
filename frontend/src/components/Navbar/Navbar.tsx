@@ -13,16 +13,33 @@ const Navbar = () => {
     
     window.onscroll = function () {
         setScrollTop(document.documentElement.scrollTop);
-        if (scrollTop < 2350) {
-            setColor("purple");
-        } else if (scrollTop > 2350 && scrollTop < 4200) {
-          setColor("red");
+
+        if (window.screen.height < 860) {
+            if (scrollTop < 2150) {
+                setColor("purple");
+            } else if (scrollTop > 2150 && scrollTop < 4100) {
+              setColor("red");
+            }
+            else if (scrollTop > 4100 && scrollTop < 4650) {
+                setColor("light");
+            } else if (scrollTop > 4650) {
+                setColor("purple");
+            }
+
+        } else {
+            if (scrollTop < 2350) {
+                setColor("purple");
+            } else if (scrollTop > 2350 && scrollTop < 4200) {
+              setColor("red");
+            }
+            else if (scrollTop > 4200 && scrollTop < 4800) {
+                setColor("light");
+            } else if (scrollTop > 4800) {
+                setColor("purple");
+            }
         }
-        else if (scrollTop > 4200 && scrollTop < 4800) {
-            setColor("light");
-        } else if (scrollTop > 4800) {
-            setColor("purple");
-        }
+
+        
     };
 
 
@@ -49,9 +66,9 @@ const Navbar = () => {
             <AnimatePresence>           
                 {toggle && (
                 <motion.div
-                    initial={{ x: 300 }}
+                    initial={{ x: "100%" }}
                     animate={{ x: 0 }}
-                    exit={{ x: 350 }}
+                    exit={{ x: "100%" }}
                     transition={{ duration: 0.5, ease: 'easeOut' }}
                 >
                     <HiX onClick={() => setToggle(false)} />

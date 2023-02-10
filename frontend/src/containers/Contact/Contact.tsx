@@ -103,6 +103,7 @@ const Contact = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.email}
+                      viewport={{ once: true }}
                       whileInView={{ x: [-300, 0], opacity: [0, 1] }}
                     />
                     <label className=".input__label" htmlFor="subject">
@@ -116,6 +117,7 @@ const Contact = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.subject}
+                      viewport={{ once: true }}
                       whileInView={{ x: [-300, 0], opacity: [0, 1] }}
                       transition={{ delay: 0.2 }}
                     />
@@ -129,6 +131,7 @@ const Contact = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.message}
+                      viewport={{ once: true }}
                       whileInView={{ x: [-300, 0], opacity: [0, 1] }}
                       transition={{ delay: 0.4 }}
                     />
@@ -153,6 +156,7 @@ const Contact = () => {
 
               {!submitted && (
                 <motion.button
+                viewport={{ once: true }}
                   whileInView={{ opacity: [0, 1] }}
                   transition={{ delay: 0.8 }}
                   type="submit"

@@ -18,7 +18,13 @@ const About = () => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.3,
+                  transition: {delay: 0}
+                }}
                 whileInView={{scale: [0, 1.3, 1]}}
+                
                 transition={{duration: 0.3, delay: 0.2}}
                 
               >
@@ -31,6 +37,11 @@ const About = () => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.3,
+                  transition: {delay: 0}
+                }}
                 whileInView={{scale: [0, 1.3, 1]}}
                 transition={{duration: 0.3, delay: 0.4}}
               >
@@ -42,6 +53,7 @@ const About = () => {
         </div>
 
         <motion.p 
+          viewport={{ once: true }}
           whileInView={{opacity: [0, 1]}}
           >
           <br />
@@ -51,6 +63,7 @@ const About = () => {
           <br />
           <br />
         <motion.p
+          viewport={{ once: true }}
           whileInView={{opacity: [0, 1]}}
           transition={{duration: 0.5, delay: 0.2}}
         >
@@ -60,6 +73,7 @@ const About = () => {
           <br />
           <br />
         <motion.p
+          viewport={{ once: true }}
           whileInView={{opacity: [0, 1]}}
           transition={{duration: 0.5, delay: 0.4}}
         >

@@ -16,6 +16,7 @@ const Work = () => {
           <li><a href="https://github.com/anadreth/fullstack-creatoroll" className='code'>code</a></li>
         </ul>
         <motion.p
+        viewport={{ once: true }}
           whileInView={{opacity: [0, 1]}}
           transition={{duration: 0.5, delay: 0}}
         >
@@ -27,6 +28,7 @@ const Work = () => {
           <img className="work__mobile" src={images.tablet} alt="mobile" />
           
           <motion.p
+          viewport={{ once: true }}
             whileInView={{opacity: [0, 1]}}
             transition={{duration: 0.5, delay: 0.1}}
           >
@@ -36,6 +38,7 @@ const Work = () => {
           </motion.p>
 
           <motion.p
+          viewport={{ once: true }}
             whileInView={{opacity: [0, 1]}}
             transition={{duration: 0.5, delay: 0.2}}
           >
@@ -45,6 +48,7 @@ const Work = () => {
           </motion.p>
             
           <motion.p
+          viewport={{ once: true }}
             whileInView={{opacity: [0, 1]}}
             transition={{duration: 0.5, delay: 0.3}}
           >

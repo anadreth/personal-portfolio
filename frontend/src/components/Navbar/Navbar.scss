@@ -94,9 +94,6 @@
             background-color: var(--purple-color);
             align-self: end;
            
-            @media screen and (max-height: 625px) {
-                display: none;
-            }
         }
 
         ul {

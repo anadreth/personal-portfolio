@@ -7,12 +7,14 @@ const Experiences = () => {
   return (
     <div className='app__experiences' id="background">
         <motion.img src={images.boyStanding} alt="" className='img__absolute'
+            viewport={{ once: true }}
             whileInView={{opacity: [0, 1]}}
             transition={{delay: 0.5, duration: 1}}
         />
         <section className='exp__container'>
             <div className='h__div'>
                 <motion.h2
+                viewport={{ once: true }}
                     whileInView={{opacity: [0, 1]}}
                     transition={{delay: 0.3, duration: 0.5}}
                 >My<br/>Background</motion.h2>
@@ -20,6 +22,7 @@ const Experiences = () => {
             <div className='app__experiences-table'>
                 <div>
                     <motion.a href="https://grandbeats.com/" className='work__header'
+                        viewport={{ once: true }}
                         whileInView={{opacity: [0, 1]}}
                         transition={{delay: 0.4, duration: 0.5}}
                     >
@@ -28,6 +31,7 @@ const Experiences = () => {
                 </div>
                 
                 <motion.ul
+                viewport={{ once: true }}
                     whileInView={{opacity: [0, 1]}}
                     transition={{delay: 0.5, duration: 0.5}}
                 >
@@ -39,12 +43,14 @@ const Experiences = () => {
             <div className='app__experiences-school'>  
                 <div>
                     <motion.a href="https://www.jfmed.uniba.sk/en" className='work__header'
+                        viewport={{ once: true }}
                         whileInView={{opacity: [0, 1]}}
                         transition={{delay: 0.6, duration: 0.5}}
                     >School</motion.a>
                 </div>
                 
                 <motion.ul
+                    viewport={{ once: true }}
                     whileInView={{opacity: [0, 1]}}
                     transition={{delay: 0.7, duration: 0.5}}
                 >

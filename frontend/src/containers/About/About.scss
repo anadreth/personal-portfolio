@@ -24,6 +24,7 @@
                 margin: 1rem;
                 filter: invert(47%) sepia(16%) saturate(769%) hue-rotate(203deg) brightness(94%) contrast(90%);
             }
+            
         }
     }
 
@@ -50,4 +51,8 @@
         }
     }
     
+
+    @media screen and (max-height: 600px) {
+        padding-top: 4rem;
+    }
 }

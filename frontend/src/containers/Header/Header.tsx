@@ -20,11 +20,15 @@ const Header = () => {
   const miroslav = "Miroslav";
   const vano = " Vaňo";
   let amount: number;
-  if (screen.width < 1000) {
+
+  if (screen.width < 1000 && screen.height > 601) {
     amount = 400;
-  } else {
+  } else if (screen.width > 1000 && screen.height > 601) {
     amount = 1000;
+  } else if (screen.height < 601) {
+    amount = 600;
   }
+
   let { scrollYProgress } = useScroll();
   let opacity = useTransform(scrollYProgress, [0, 0.15], ["1", "0"]);
   let y = useTransform(scrollYProgress, [0, 1], ["0%", amount + "%"]);
