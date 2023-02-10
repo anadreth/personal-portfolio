@@ -25,7 +25,7 @@ const Header = () => {
     amount = 400;
   } else if (screen.width > 1000 && screen.height > 601) {
     amount = 1000;
-  } else if (screen.height < 601) {
+  } else  {
     amount = 600;
   }
 
