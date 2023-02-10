@@ -24,13 +24,13 @@ const ProgressBar = ({color, setHighlight}: ProgressBarProps) => {
     } else if (scrolled < 25 ) {
       setHighlight(false);
       amount = 30;
-    } else if (scrolled < 30) {
+    } else if (scrolled < 45) {
       setHighlight(false);
       amount = 45;
     } else if (scrolled < 80) {
       setHighlight(false);
       amount = 60;
-    } else if (scrolled < 84) {
+    } else if (scrolled < 98) {
       setHighlight(false);
       amount = 75;
     } else {
