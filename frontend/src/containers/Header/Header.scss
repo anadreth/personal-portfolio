@@ -119,16 +119,33 @@
     z-index: 100;
   }
 
+  .scrolldiv {
+   
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .scroll {
-    width: 50px;
-    height: 60px;
     position: absolute;
     top: 80%;
+    width: 50px;
+    height: 60px;
     color: white;
     box-shadow: 0 0 10px white;
     border-radius: 80%;
     padding: 0.8rem;
     background-image: linear-gradient(white, var(--purple-color));
     backdrop-filter: blur(10px);
+    transition: all;
 
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      color: var(--purple-color);
+      background-image: -webkit-linear-gradient(var(--purple-color), white);
+    }
   }
+
+

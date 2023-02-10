@@ -63,7 +63,9 @@ const Navbar = () => {
                         </a>
                         </li>
                     ))}
- 
+                        <li>
+                            <a href={images.cv} onClick={() => setToggle(false)} target="_blank" >resume</a> 
+                        </li>
                     </ul>
                 </motion.div>
                 )}

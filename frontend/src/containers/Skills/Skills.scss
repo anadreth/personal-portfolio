@@ -23,6 +23,8 @@
 
         img {
             width: 110px;
+
+           
             @media screen and (max-width: 300px) {
                 width: 90px;
                 
@@ -37,7 +39,6 @@
             max-width: 500px;
             
         }
-       
         
     }
 }
