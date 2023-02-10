@@ -17,7 +17,7 @@ import ps from './../assets/ps.png'
 import tablet from './../assets/tablet.png'
 import linked from './../assets/logos/linked.svg'
 import github from './../assets/logos/github.svg'
-import cv from  './../assets/mv_cv.pdf'
+import cv from  './../assets/miroslav_vano_cv.pdf'
 import tailwind from './../assets/tailwind.png'
 
 export default {
