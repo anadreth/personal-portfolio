@@ -12,8 +12,8 @@ const Work = () => {
         <br/>
         <img className='work__brand' src={images.brand} alt="creatoroll" />
         <ul>
-          <li><a href="https://www.creatoroll.online/" className='link'>link</a></li>
-          <li><a href="https://github.com/anadreth/fullstack-creatoroll" className='code'>code</a></li>
+          <li><a href="https://www.creatoroll.online/" className='link'  target="_blank" rel='noopener'>link</a></li>
+          <li><a href="https://github.com/anadreth/fullstack-creatoroll" className='code' target="_blank" rel='noopener'>code</a></li>
         </ul>
         <motion.p
         viewport={{ once: true }}
