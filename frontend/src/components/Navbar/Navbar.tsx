@@ -94,7 +94,7 @@ const Navbar = () => {
         </div>
         <ProgressBar color={color} setHighlight={setHighlight} />
 
-        <a href={images.cv}>
+        <a href={images.cv} target="_blank">
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
